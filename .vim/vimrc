@@ -1,0 +1,29 @@
+" turn off vi compatiblity mode
+set nocompatible
+
+"Base setup:
+set number          "show line numbers 
+set relativenumber  "show line numbers relateive to cursor row
+set sw=4 ts=4       "shift width and tab width value 
+set expandtab       "use spaces instead of tabs 
+set scrolloff=8     "buffer cursor from end of window vertically
+
+"Search, syntax, formatting
+set signcolumn=yes  "show plugin state icons
+syntax on           "enable colored syntax
+set hlsearch        "highlight found searches
+
+"Extending
+set exrc            "load local .vimrc files in current dir
+
+"Plugin management
+call plug#begin()
+Plug 'dense-analysis/ale' " from https://github.com/dense-analysis/ale
+Plug 'pearofducks/ansible-vim'
+Plug 'Yggdroot/indentLine'
+" Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
+call plug#end()
+
+let b:ale_fixers = {
+    \    '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \    }
