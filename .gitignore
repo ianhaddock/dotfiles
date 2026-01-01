@@ -2,10 +2,12 @@
 
 .DS_Store
 
+finder-config-backups/*
+
 *.log
 test*
 
-# Vim temporary files
+# Vim temp files
 *.swp
 *.swo
 *.un~

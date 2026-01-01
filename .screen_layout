@@ -1,0 +1,12 @@
+split
+
+screen -t top
+
+focus
+
+screen -t bottom
+
+resize 30% 
+
+focus
+

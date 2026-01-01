@@ -1,0 +1,18 @@
+# .screenrc
+
+# default layout
+source .screen_layout
+layout autosave on
+
+# two-line status, current window highlight
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+
+# scrollback buffer
+defscrollback 4000
+
+# switch focus by clicking
+mousetrack on
+
+# set color terminal
+term screen-256color
