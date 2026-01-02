@@ -7,6 +7,7 @@ backblaze
 bambu-studio
 bbedit
 blender
+btop
 cmatrix
 coreutils
 discord
@@ -22,6 +23,7 @@ google-chrome
 hashicorp/tap/terraform
 irssi
 iterm2
+libreoffice
 lynx
 mas
 mtr
