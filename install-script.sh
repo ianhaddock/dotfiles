@@ -95,6 +95,13 @@ fi
 sleep 1
 
 echo ""
+echo "### Apple Store: MAS"
+echo "* update installed apps"
+mas update
+echo "* install apps"
+xargs mas lucky < mas-install-list.txt
+
+echo ""
 echo "### Configuring dotfiles:"
 if [ ! -f ~/.vim/autoload/plug.vim ]; then 
   echo "* Installing VIM Plug"
@@ -111,13 +118,13 @@ if [ ! -f ${DOTFILE_PATH}/.vimrc ]; then
     echo "* Linking .vimrc from dotfiles to home directory"
     cp -sv ${DOTFILE_PATH}/.vimrc /Users/${USER}/.vimrc
 fi
-echo "* Add screen config"
 if [ ! -f ${DOTFILE_PATH}/.screenrc ]; then
+    echo "* Add screen config"
     cp -v ./.screenrc ${DOTFILE_PATH}/.screenrc
     cp -sv ${DOTFILE_PATH}/.screenrc /Users/${USER}/.screenrc
 fi
-echo "* add screen layout"
 if [ ! -f ${DOTFILE_PATH}/.screen_layout ]; then
+    echo "* add screen layout"
     cp -v ./.screen_layout ${DOTFILE_PATH}/.screen_layout
     cp -sv ${DOTFILE_PATH}/.screen_layout /Users/${USER}/.screen_layout
 fi
