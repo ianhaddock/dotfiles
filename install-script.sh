@@ -178,6 +178,8 @@ defaults write com.apple.finder AlwaysOpenWindowsInColumnView -int 1
 echo "* Set new windows open to home directory"
 defaults write com.apple.finder NewWindowTarget -string "PfHm"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+echo "* Expand save window by default"
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 sleep 1
 
 echo ""

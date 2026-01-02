@@ -1,13 +1,11 @@
 # Dotfiles
 
-Script to install Homebrew, apps, oh-my-zsh, dotfiles, create directories, and adjust MacOS settings to my prefernces.
+Script to automate install and configuration of my laptop including:
 
-### Config files
-
-* .vimrc
-* .screenrc
-* .bash_profile
-* brew-installed.txt
+* Homebrew and apps
+* dotfiles
+* create various directories
+* MacOS settings
 
 ## Install
 
