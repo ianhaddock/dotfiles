@@ -30,6 +30,7 @@ mtr
 netspot
 nmap
 no-more-secrets
+orion
 parsec
 rectangle
 rsync

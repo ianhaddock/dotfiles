@@ -99,7 +99,8 @@ echo "### Apple Store: MAS"
 echo "* update installed apps"
 mas update
 echo "* install apps"
-xargs mas lucky < mas-install-list.txt
+# regex is for lines that start and end with numbers only
+grep -G '^[0-9]*$' mas-install-list.txt | xargs -I {} mas get {}
 
 echo ""
 echo "### Configuring dotfiles:"
