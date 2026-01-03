@@ -32,6 +32,7 @@ nmap
 no-more-secrets
 orion
 parsec
+podman-desktop
 rectangle
 rsync
 slack
