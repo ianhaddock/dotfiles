@@ -3,9 +3,10 @@
 Script to automate install and configuration of my laptop including:
 
 * Homebrew and apps
+* mas and apps from the Apple Store
 * dotfiles
 * create various directories
-* MacOS settings
+* MacOS Finder settings
 
 ## Install
 
