@@ -113,9 +113,19 @@ if [ ! -d ${DOTFILE_PATH} ]; then
     echo "* Creating ${DOTFILE_PATH} directory"
     mkdir -pv ${DOTFILE_PATH} 
 fi
+if [ ! -f ${DOTFILE_PATH}/.zshrc ]; then
+    echo "* Copying .zshrc file to dotfiles directory"
+    cp -v ./.zshrc ${DOTFILE_PATH}
+fi
+if [ ! -f /Users/${USER}/.zshrc ]; then
+    echo "* Linking .zshrc from dotfiles to home directory"
+    cp -sv ${DOTFILE_PATH}/.zshrc /Users/${USER}/.zshrc
+fi
 if [ ! -f ${DOTFILE_PATH}/.vimrc ]; then
-    echo "* Copying .vimrc files to dotfiles directory" 
+    echo "* Copying .vimrc files to dotfiles directory"
     cp -v ./.vimrc ${DOTFILE_PATH}
+fi
+if [ ! -f /Users/${USER}/.vimrc ]; then
     echo "* Linking .vimrc from dotfiles to home directory"
     cp -sv ${DOTFILE_PATH}/.vimrc /Users/${USER}/.vimrc
 fi
