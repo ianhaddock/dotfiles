@@ -1,6 +1,7 @@
 1password
 1password-cli
 act
+ansible
 arduino-ide
 awscli
 backblaze
