@@ -150,6 +150,11 @@ mkdir -pv ./finder-config-backups
 defaults export com.apple.Finder ./finder-config-backups/com.apple.finder.defaults_$(date +%Y-%m-%d_%H%M%S)
 
 echo ""
+echo "### Login screen settings:"
+echo "* Set login text"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "all that is gold does not glitter, not all who wander are lost"
+
+echo ""
 echo "### Keyboard and smart text settings:"
 echo "* Setting key repeat"
 defaults write NSGlobalDomain KeyRepeat -int 2
