@@ -32,3 +32,8 @@ Script to automate install and configuration of my laptop including:
 * add home directory to sidebar
 * set FK_DefaultListViewSettings -> calculateAllSizes -> true
 * set computername `sudo systemsetup -setcomputername`
+
+### Reference
+
+* `https://www.defaults-write.com`
+
