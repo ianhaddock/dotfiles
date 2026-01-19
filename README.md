@@ -36,4 +36,5 @@ Script to automate install and configuration of my laptop including:
 ### Reference
 
 * `https://www.defaults-write.com`
+* `https://medium.com/@laclementine/dotfile-for-mac-efe082ad0d6a`
 
