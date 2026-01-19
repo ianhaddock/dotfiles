@@ -3,9 +3,9 @@
 Script to automate install and configuration of my laptop including:
 
 * Homebrew and apps
-* mas and apps from the Apple Store
-* dotfiles
-* create various directories
+* Apple Store apps with `mas`
+* configuration dotfiles
+* various directories
 * MacOS Finder settings
 
 ## Install
@@ -22,9 +22,9 @@ Script to automate install and configuration of my laptop including:
   - `killall cfprefsd`
   - `killall Dock`
 
-### Applications not in brew
+### Applications not in package managers
 
-* MakeMKV
+* `https://www.makemkv.com/download/`
 
 ### ToDo
 

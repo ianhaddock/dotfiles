@@ -21,6 +21,8 @@ flake8
 git
 git-filter-repo
 google-chrome
+handbrake
+handbrake-app
 hashicorp/tap/terraform
 irssi
 iterm2
