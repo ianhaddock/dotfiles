@@ -17,6 +17,7 @@ dropbox
 figlet
 firefox
 flake8
+fzf
 git
 git-filter-repo
 google-chrome
