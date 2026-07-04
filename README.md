@@ -4,6 +4,7 @@ Script to automate install and configuration of my laptop including:
 
 * Homebrew and apps
 * Apple Store apps with `mas`
+* installes rosetta
 * configuration dotfiles
 * various directories
 * MacOS Finder settings

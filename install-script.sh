@@ -103,6 +103,14 @@ echo "* install apps"
 grep -G '^[0-9]*$' mas-install-list.txt | xargs -I {} mas get {}
 
 echo ""
+if ! pgrep oahd >/dev/null 2>&1 ; then
+    echo "### Installing Rosetta"
+    sudo softwareupdate --install-rosetta --agree-to-license
+else
+    echo "### Rosetta already installed"
+fi
+
+echo ""
 echo "### Configuring dotfiles:"
 if [ ! -f ~/.vim/autoload/plug.vim ]; then 
   echo "* Installing VIM Plug"
